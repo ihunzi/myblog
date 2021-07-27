@@ -1,0 +1,47 @@
+/* H1标签 */
+.markdown-section h1 span{
+  display:inline-block;
+  color:#000000;
+  padding:  10px  16px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow:  6px 6px 12px #e6e6e6,
+              -6px -6px 12px #ffffff;
+}
+/* H1标签 */
+
+/* 头像闪光效果 */
+.flash-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+
+}
+.flash-container::after {
+  content: "";
+  height: 150%;
+  width: 25px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  opacity: .6;
+  filter: blur(6px);
+  animation: move 1.5s infinite ease-out;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-200px, -200px) rotate(45deg);
+  }
+  100% {
+    transform: translate(200px, 200px) rotate(45deg);
+  }
+}
+/* 头像闪光效果 */
+
