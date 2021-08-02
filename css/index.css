@@ -45,3 +45,11 @@
 }
 /* 头像闪光效果 */
 
+/* 备案 */
+.beian{
+  text-decoration:none;
+  font-size: 15px;
+  color: #34495e !important;
+  font-weight: normal !important;
+}
+/* 备案 */
